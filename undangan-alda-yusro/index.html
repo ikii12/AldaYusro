@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding of Alda &amp; Yusro | 12.12.2026</title>
+  <meta name="description" content="Undangan pernikahan Alda Fitriani &amp; Muhamad Yusro, Sabtu 12 Desember 2026.">
+  <meta name="theme-color" content="#5e1428">
+
+  <!-- Open Graph (tampilan saat link dibagikan di WhatsApp) -->
+  <meta property="og:title" content="The Wedding of Alda &amp; Yusro">
+  <meta property="og:description" content="Sabtu, 12 Desember 2026 · Kp. Muncung, Tigaraksa, Kab. Tangerang">
+  <meta property="og:type" content="website">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Library (disimpan lokal di assets/vendor) -->
+  <link rel="stylesheet" href="assets/vendor/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/aos.css">
+  <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css">
+
+  <!-- Style utama -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-locked">
+
+  <!-- =========================================================
+       COVER (layar pembuka)
+       ========================================================= -->
+  <section id="cover" class="cover" aria-label="Sampul undangan">
+    <img class="cover__flower cover__flower--top" src="assets/images/bunga-sudut.svg" alt="">
+    <img class="cover__flower cover__flower--bottom" src="assets/images/bunga-sudut.svg" alt="">
+    <div class="sparkles" aria-hidden="true"></div>
+
+    <div class="cover__arch">
+      <p class="cover__eyebrow animate__animated animate__fadeInDown">The Wedding of</p>
+      <h1 class="cover__names animate__animated animate__zoomIn">
+        <span>Alda</span>
+        <span class="amp">&amp;</span>
+        <span>Yusro/gotil</span>
+      </h1>
+      <p class="cover__date animate__animated animate__fadeInUp">12 . 12 . 26</p>
+
+      <div class="cover__guest animate__animated animate__fadeInUp">
+        <p>Kepada Yth. Bapak/Ibu/Saudara/i :</p>
+        <p class="guest-name" id="guestName">Tamu Undangan</p>
+        <p class="guest-note">mohon maaf apabila ada kesalahan dalam penulisan nama &amp; gelar</p>
+      </div>
+
+      <button class="btn btn--gold animate__animated animate__pulse animate__infinite animate__slower" id="btnOpen" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- Tirai transisi saat cover dibuka -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__half curtain__half--left"></div>
+    <div class="curtain__half curtain__half--right"></div>
+  </div>
+
+  <!-- Kelopak bunga berjatuhan -->
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <!-- Tombol musik -->
+  <audio id="bgMusic" src="assets/audio/lagu.mp3" loop preload="auto"></audio>
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Jeda musik" hidden>
+    <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+    <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+    <span class="music-btn__note" aria-hidden="true">&#9835;</span>
+  </button>
+
+  <!-- =========================================================
+       ISI UNDANGAN
+       ========================================================= -->
+  <main id="main" class="main">
+
+    <!-- HERO -->
+    <section class="section hero" id="home">
+      <img class="deco deco--tr" src="assets/images/bunga-sudut.svg" alt="">
+      <img class="deco deco--bl" src="assets/images/bunga-sudut.svg" alt="">
+      <div class="hero__inner">
+        <p class="eyebrow hero-anim">&middot; The Wedding of &middot;</p>
+        <h2 class="script script--xl hero-anim">Alda</h2>
+        <p class="script script--amp hero-anim">&amp;</p>
+        <h2 class="script script--xl hero-anim">Yusro</h2>
+        <div class="divider hero-anim"><span></span><img src="assets/images/mawar.svg" alt=""><span></span></div>
+        <p class="hero__date hero-anim">Sabtu, 12 Desember 2026</p>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- SALAM & AYAT -->
+    <section class="section quote">
+      <p class="quote__salam" data-aos="fade-up">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      <p class="quote__text" data-aos="fade-up" data-aos-delay="150">
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+        agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+        Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+      </p>
+      <p class="quote__src" data-aos="fade-up" data-aos-delay="250">QS. Ar-Rum : 21</p>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="section couple" id="mempelai">
+      <p class="eyebrow" data-aos="fade-down">Mempelai</p>
+      <p class="couple__intro" data-aos="fade-up">
+        Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:
+      </p>
+
+      <div class="person" data-aos="fade-right">
+        <div class="person__frame"><span class="person__initial">A</span></div>
+        <h3 class="script script--lg">Alda Fitriani</h3>
+        <p class="person__parent">Putri ketiga dari<br><strong>Bapak Enjat Setiawan &amp; Ibu Rohmiati</strong></p>
+      </div>
+
+      <p class="script script--with" data-aos="zoom-in">with</p>
+
+      <div class="person" data-aos="fade-left">
+        <div class="person__frame"><span class="person__initial">Y</span></div>
+        <h3 class="script script--lg">Muhamad Yusro</h3>
+        <p class="person__parent">Putra ketiga dari<br><strong>Bapak Dani (Alm) &amp; Ibu Ayuri</strong></p>
+      </div>
+    </section>
+
+    <!-- SAVE THE DATE + COUNTDOWN -->
+    <section class="section event" id="acara">
+      <img class="deco deco--tr deco--sm" src="assets/images/bunga-sudut.svg" alt="">
+      <p class="eyebrow eyebrow--light" data-aos="fade-down">Save The Date</p>
+
+      <div class="bigdate" data-aos="zoom-in">
+        <span class="bigdate__day">Sabtu</span>
+        <span class="bigdate__num">12</span>
+        <span class="bigdate__my">12.2026</span>
+      </div>
+
+      <div class="countdown" id="countdown" data-aos="fade-up">
+        <div class="countdown__item"><span id="cdDays">00</span><small>Hari</small></div>
+        <div class="countdown__item"><span id="cdHours">00</span><small>Jam</small></div>
+        <div class="countdown__item"><span id="cdMinutes">00</span><small>Menit</small></div>
+        <div class="countdown__item"><span id="cdSeconds">00</span><small>Detik</small></div>
+      </div>
+      <p class="countdown__done" id="countdownDone" hidden>Alhamdulillah, hari bahagia telah tiba.</p>
+
+      <div class="event__cards">
+        <div class="card" data-aos="flip-left">
+          <h4>Akad Nikah</h4>
+          <p class="card__time">Pukul 10.00 WIB</p>
+          <p>Sabtu, 12 Desember 2026</p>
+        </div>
+        <div class="card" data-aos="flip-right" data-aos-delay="150">
+          <h4>Resepsi</h4>
+          <p class="card__time">Pukul 11.00 WIB</p>
+          <p>Sabtu, 12 Desember 2026</p>
+        </div>
+      </div>
+
+      <a class="btn btn--outline" id="btnCalendar" target="_blank" rel="noopener" data-aos="fade-up">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 8h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        Simpan ke Kalender
+      </a>
+    </section>
+
+    <!-- LOKASI + MAPS -->
+    <section class="section location" id="lokasi">
+      <p class="eyebrow" data-aos="fade-down">Lokasi Acara</p>
+      <p class="location__addr" data-aos="fade-up">
+        Kp. Muncung, RT.002/002,<br>
+        Ds. Bantar Panjang, Kec. Tigaraksa,<br>
+        Kab. Tangerang
+      </p>
+
+      <div class="map" data-aos="zoom-in-up">
+        <iframe
+          title="Peta lokasi acara"
+          src="https://maps.google.com/maps?q=-6.307309,106.457875&z=16&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+
+      <a class="btn btn--maroon" href="https://maps.app.goo.gl/bXVFzw9ABToqtevJA" target="_blank" rel="noopener" data-aos="fade-up">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        Buka Google Maps
+      </a>
+
+      <div class="qr" data-aos="fade-up">
+        <img src="assets/images/qr-lokasi.png" alt="QR code lokasi acara" width="140" height="140">
+        <p>Scan untuk petunjuk arah</p>
+      </div>
+    </section>
+
+    <!-- GALERI (Swiper) -->
+    <section class="section gallery" id="galeri">
+      <p class="eyebrow eyebrow--light" data-aos="fade-down">Galeri</p>
+      <h3 class="script script--lg script--light" data-aos="fade-up">Our Moments</h3>
+      <div class="swiper gallery__swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/gallery/foto-1.jpg" alt="Foto prewedding 1" loading="lazy"></div>
+          <div class="swiper-slide"><img src="assets/images/gallery/foto-2.jpg" alt="Foto prewedding 2" loading="lazy"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- AMPLOP DIGITAL -->
+    <section class="section gift" id="amplop">
+      <img class="deco deco--tr deco--sm" src="assets/images/bunga-sudut.svg" alt="">
+      <p class="eyebrow" data-aos="fade-down">Amplop Digital</p>
+      <h3 class="script script--lg" data-aos="fade-up">Wedding Gift</h3>
+      <p class="gift__text" data-aos="fade-up">
+        Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+        Namun jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless.
+      </p>
+
+      <div class="bank-card" data-aos="flip-up">
+        <div class="bank-card__top">
+          <span class="bank-card__chip" aria-hidden="true"></span>
+          <span class="bank-card__logo">
+            <!-- Logo BCA: simpan file logo resmi di assets/images/logo-bca.png -->
+            <img id="bcaLogo" src="assets/images/logo-bca.png" alt="Bank BCA">
+          </span>
+        </div>
+        <p class="bank-card__number" id="rekNumber" data-rek="7131798877">7131 798 877</p>
+        <p class="bank-card__label">a.n.</p>
+        <p class="bank-card__name">Muh Yusro</p>
+      </div>
+
+      <button class="btn btn--maroon" id="btnCopy" type="button" data-aos="fade-up">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 15V5a1 1 0 011-1h10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Salin No. Rekening</span>
+      </button>
+    </section>
+
+    <!-- UCAPAN & RSVP -->
+    <section class="section wishes" id="ucapan">
+      <p class="eyebrow eyebrow--light" data-aos="fade-down">RSVP &amp; Ucapan</p>
+      <h3 class="script script--lg script--light" data-aos="fade-up">Doa &amp; Ucapan</h3>
+      <p class="wishes__text" data-aos="fade-up">Kirimkan doa dan ucapan terbaik untuk kedua mempelai, serta konfirmasi kehadiran Anda.</p>
+
+      <div class="wishes__stats" data-aos="fade-up">
+        <div><span id="statHadir">0</span><small>Hadir</small></div>
+        <div><span id="statTidak">0</span><small>Tidak Hadir</small></div>
+        <div><span id="statRagu">0</span><small>Masih Ragu</small></div>
+      </div>
+
+      <form class="wish-form" id="wishForm" data-aos="fade-up" novalidate>
+        <label class="field">
+          <span>Nama</span>
+          <input type="text" name="nama" id="wishNama" maxlength="60" placeholder="Nama Anda" required>
+        </label>
+        <label class="field">
+          <span>Ucapan &amp; Doa</span>
+          <textarea name="ucapan" id="wishUcapan" rows="4" maxlength="500" placeholder="Tulis ucapan dan doa terbaik..." required></textarea>
+        </label>
+        <fieldset class="field">
+          <legend>Konfirmasi Kehadiran</legend>
+          <div class="choices">
+            <label><input type="radio" name="kehadiran" value="Hadir" checked><span>Hadir</span></label>
+            <label><input type="radio" name="kehadiran" value="Tidak Hadir"><span>Tidak Hadir</span></label>
+            <label><input type="radio" name="kehadiran" value="Masih Ragu"><span>Masih Ragu</span></label>
+          </div>
+        </fieldset>
+        <p class="wish-form__error" id="wishError" hidden></p>
+        <button class="btn btn--gold wish-form__submit" id="wishSubmit" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span>Kirim Ucapan</span>
+        </button>
+      </form>
+
+      <div class="wish-list" id="wishList" aria-live="polite">
+        <p class="wish-list__empty">Memuat ucapan...</p>
+      </div>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Popup terima kasih setelah mengirim RSVP -->
+    <div class="thanks" id="thanks" role="dialog" aria-modal="true" aria-labelledby="thanksTitle" hidden>
+      <div class="thanks__box">
+        <svg class="thanks__check" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="44"/>
+          <path d="M30 52 L45 66 L71 37"/>
+        </svg>
+        <h4 class="thanks__title" id="thanksTitle">Terima Kasih</h4>
+        <p class="thanks__msg" id="thanksMsg">Ucapan dan doa Anda sudah kami terima.</p>
+        <button class="btn btn--maroon" id="thanksClose" type="button">Tutup</button>
+      </div>
+    </div>
+    <div class="burst" id="burst" aria-hidden="true"></div>
+
+    <!-- PENUTUP -->
+    <section class="section closing" id="penutup">
+      <img class="deco deco--bl" src="assets/images/bunga-sudut.svg" alt="">
+      <div class="lottie-heart" id="lottieHeart" aria-hidden="true"></div>
+      <p class="closing__text" data-aos="fade-up">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+        berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+      </p>
+      <p class="closing__text" data-aos="fade-up">Atas kehadiran dan doa restunya, kami ucapkan terima kasih.</p>
+      <p class="quote__salam" data-aos="fade-up">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      <p class="closing__sign" data-aos="fade-up">Kami yang Berbahagia,</p>
+      <h2 class="script script--xl" data-aos="zoom-in">Alda &amp; Yusro/gotil</h2>
+    </section>
+
+    <footer class="footer">
+      <p>The Wedding of Alda &amp; Yusro &middot; 12.12.2026</p>
+    </footer>
+  </main>
+
+  <!-- Script library -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/aos.js"></script>
+  <script src="assets/vendor/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/lottie.min.js"></script>
+  <script src="assets/lottie/heart.js"></script>
+
+  <!-- Script utama -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
