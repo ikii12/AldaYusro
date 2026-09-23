@@ -465,7 +465,17 @@ button { font: inherit; cursor: pointer; border: 0; background: none; }
 .closing__sign { font-family: var(--font-serif); font-style: italic; font-size: 1.15rem; margin-top: 1.4rem; }
 .closing .script--xl { font-size: clamp(2.8rem, 13vw, 3.8rem); }
 
-.footer { background: var(--maroon-900); color: var(--blush-300); text-align: center; padding: 1.4rem 1rem 5rem; font-size: .78rem; letter-spacing: .1em; }
+.footer { background: var(--maroon-900); color: var(--blush-300); text-align: center; padding: 1.4rem 1rem 6.5rem; font-size: .78rem; letter-spacing: .1em; }
+
+/* Kredit pembuat undangan */
+.credit { margin-top: 1.6rem; padding-top: 1.4rem; border-top: 1px solid rgba(226, 189, 115, .3); }
+.credit__title { font-family: var(--font-caps); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-300); }
+.credit__logo { width: 110px; height: auto; margin: 1rem auto; border-radius: 12px; }
+.credit__links { display: flex; flex-direction: column; align-items: center; gap: .5rem; margin-top: 1rem; }
+.credit__logo + .credit__links { margin-top: 0; }
+.credit__links a { display: inline-flex; align-items: center; gap: .45rem; color: var(--blush-200); text-decoration: none; font-size: .8rem; letter-spacing: .04em; }
+.credit__links a:hover { color: var(--gold-300); }
+.credit__links svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---------- Aksesibilitas ---------- */
 @media (prefers-reduced-motion: reduce) {
